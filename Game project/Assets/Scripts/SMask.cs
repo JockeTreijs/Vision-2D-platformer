@@ -13,6 +13,8 @@ public class SMask : MonoBehaviour
 
     float timer = 0;
 
+    private bool bigger = true;
+
     // Update is called once per frame
     void Update()
     {
