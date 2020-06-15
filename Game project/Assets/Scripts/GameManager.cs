@@ -22,13 +22,11 @@ public class GameManager : MonoBehaviour
         foreach (Vector3Int p in darkMap.cellBounds.allPositionsWithin)
         {
             darkMap.SetTile(p, darkTile);
-
         }
 
         foreach (Vector3Int p in blurredMap.cellBounds.allPositionsWithin)
         {
             blurredMap.SetTile(p, blurredTile);
-
         }
     }
 

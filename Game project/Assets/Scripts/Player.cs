@@ -68,14 +68,14 @@ public class Player : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 8 && scriptPart == 2)
+        if (collision.gameObject.layer == 9 && scriptPart == 2)
         {
             player.isGrounded = true;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 8 && scriptPart == 2)
+        if (collision.gameObject.layer == 9 && scriptPart == 2)
         {
             player.isGrounded = false;
         }
