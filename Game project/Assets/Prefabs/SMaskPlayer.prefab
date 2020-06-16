@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3467809634787545827}
   - component: {fileID: 3467809634787545826}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SMaskPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,6 +59,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OuterMask
+      objectReference: {fileID: 0}
+    - target: {fileID: 2361234768378511364, guid: 06b232212ac537d459798010a4a4eced,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2361234768378511418, guid: 06b232212ac537d459798010a4a4eced,
         type: 3}
@@ -140,6 +145,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InnerMask
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910064045807494700, guid: 1855e281ee703ff45adc05eb75f2a0ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4910064045807494702, guid: 1855e281ee703ff45adc05eb75f2a0ea,
         type: 3}

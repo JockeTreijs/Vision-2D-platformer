@@ -45,10 +45,10 @@ TagManager:
   - name: Backgorund
     uniqueID: 1142040193
     locked: 0
-  - name: Default
+  - name: World
     uniqueID: 1501618305
     locked: 0
-  - name: World
+  - name: Default
     uniqueID: 2566663291
     locked: 0
   - name: Grid
