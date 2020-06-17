@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 685559795552654750}
   - component: {fileID: 685559795552654748}
   - component: {fileID: 685559795552654749}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DarkMap
   m_TagString: Untagged
   m_Icon: {fileID: 0}

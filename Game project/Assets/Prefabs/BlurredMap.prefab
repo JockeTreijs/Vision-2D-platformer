@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4089818277952976508}
   - component: {fileID: 4089818277952976510}
   - component: {fileID: 4089818277952976509}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BlurredMap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
