@@ -14,6 +14,7 @@ public class SMask : MonoBehaviour
     float timer = 0;
 
     private bool bigger = true;
+    public Transform target;
 
     // Update is called once per frame
     void Update()
@@ -21,9 +22,19 @@ public class SMask : MonoBehaviour
         timer += Time.deltaTime;
         if( timer > flickTime)
         {
-            transform.localScale = new Vector3(transform.localScale.x + addSize, transform.localScale.y + addSize, transform.localScale.z);
+            if (bigger)
+            {
+                transform.localScale = new Vector3(transform.localScale.x + addSize, transform.localScale.y + addSize, transform.localScale.z);
+            }
+            else
+            {
+                transform.localScale = new Vector3(transform.localScale.x - addSize, transform.localScale.y - addSize, transform.localScale.z);
+            }
 
-            transform.localScale = new Vector3(transform.localScale.x - addSize, transform.localScale.y - addSize, transform.localScale.z);
+            timer = 0;
+            bigger = !bigger;
         }
+
+        transform.position = Vector3.MoveTowards(transform.position, target.position, 20 * Time.deltaTime);
     }
 }

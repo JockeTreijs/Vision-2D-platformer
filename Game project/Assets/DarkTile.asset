@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: DarkTile
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 9899b058683c67248acf34858b2d4b59, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf6ef19427403f647b66b7294d6cb34f, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_Transform:
     e00: 1

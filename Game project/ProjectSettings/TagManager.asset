@@ -14,9 +14,9 @@ TagManager:
   - UI
   - 
   - 
+  - Background
   - World
-  - 
-  - 
+  - Grid
   - 
   - 
   - 
@@ -41,4 +41,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Backgorund
+    uniqueID: 1142040193
+    locked: 0
+  - name: World
+    uniqueID: 1501618305
+    locked: 0
+  - name: Default
+    uniqueID: 2566663291
+    locked: 0
+  - name: Grid
+    uniqueID: 2565899007
     locked: 0

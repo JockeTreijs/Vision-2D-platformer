@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class GameManager : MonoBehaviour
     public Tile darkTile;
     public Tile blurredTile;
 
+    private Button startButton;
+    private Button exitButton;
+    private Button mainMenuButton;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,14 +27,21 @@ public class GameManager : MonoBehaviour
         foreach (Vector3Int p in darkMap.cellBounds.allPositionsWithin)
         {
             darkMap.SetTile(p, darkTile);
-
         }
 
         foreach (Vector3Int p in blurredMap.cellBounds.allPositionsWithin)
         {
             blurredMap.SetTile(p, blurredTile);
-
         }
+
+        startButton = GameObject.Find("StartButton").GetComponent<Button>();
+        startButton.onClick.AddListener(StartGame);
+
+        exitButton = GameObject.Find("ExitButton").GetComponent<Button>();
+        exitButton.onClick.AddListener(ExitGame);
+
+        mainMenuButton = GameObject.Find("MainMenuButton").GetComponent<Button>();
+        mainMenuButton.onClick.AddListener(MainMenu);
     }
 
     // Update is called once per frame
@@ -38,8 +50,23 @@ public class GameManager : MonoBehaviour
         
     }
 
+    public void StartGame()
+    {
+        SceneManager.LoadScene("Game");
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
     public void FinishLevel()
     {
         SceneManager.LoadScene("End");
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Start");
     }
 }
